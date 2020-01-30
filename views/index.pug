@@ -1,0 +1,93 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='description' content='Jリーグ選手の所属クラブを一覧できるサイトです。')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  
+  title=title
+  // Bootstrap core CSS  
+  link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh", crossorigin="anonymous")
+  // Custom fonts for this template  
+  link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")      
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css' rel='stylesheet' type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css')
+  // Custom styles for this template
+  link(href='/stylesheets/landing-page.css' rel='stylesheet')
+
+  //- Google Analytics code>>
+  script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-151198673-1')
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-151198673-1');
+  //- Google Analytics code<<  
+
+// Navigation
+nav.navbar.navbar-dark.bg-dark.static-top
+  .container    
+    a.navbar-brand(href='#') #{title}
+
+// Masthead
+header.masthead.text-white.text-center
+  .overlay
+  .container
+    .row
+      .col-xl-9.mx-auto
+        h1.mb-5 Jリーグ選手の所属クラブ年表      
+      .col-md-10.col-lg-8.col-xl-7.mx-auto
+        form
+          .form-row            
+            .col-12.col-md-12
+              button.btn.btn-block.btn-lg.btn-info(type="button" onclick="location.href='./search'") 検索してみる
+// Icons Grid
+section.features-icons.bg-light.text-center
+  .container
+    .row
+      .col-lg-4
+        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+          .features-icons-icon.d-flex
+            i.icon-shuffle.m-auto.text-primary
+          h3 Jump
+          p.lead.mb-0 タイムライン上のチーム名をクリックして知りたい年代にジャンプ
+      .col-lg-4
+        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+          .features-icons-icon.d-flex
+            i.icon-user.m-auto.text-primary            
+          h3 Player Data
+          p.lead.mb-0 2019シーズンJ1チームの選手情報(データ元:Wikipedia)
+      .col-lg-4
+        .features-icons-item.mx-auto.mb-0.mb-lg-3
+          .features-icons-icon.d-flex
+            i.icon-globe.m-auto.text-primary
+          h3 Wikipedia Link
+          p.lead.mb-0 選手名をクリックしてWikipediaを表示
+
+// Footer
+footer.footer.bg-light
+  .container
+    .row
+      .col-lg-6.h-100.text-center.text-lg-left.my-auto
+        ul.list-inline.mb-2
+          li.list-inline-item
+            a(href='https://forms.gle/666x2G1PLL8Xh2XL9' target='_blank') フィードバック
+          //- li.list-inline-item &sdot;
+          //- li.list-inline-item
+          //-   a(href='#') Contact
+          //- li.list-inline-item &sdot;
+          //- li.list-inline-item
+          //-   a(href='#') Terms of Use
+          //- li.list-inline-item &sdot;
+          //- li.list-inline-item
+          //-   a(href='#') Privacy Policy
+        //- p.text-muted.small.mb-4.mb-lg-0 &copy; Your Website 2019. All Rights Reserved.
+      .col-lg-6.h-100.text-center.text-lg-right.my-auto
+        ul.list-inline.mb-0          
+          li.list-inline-item.mr-3
+            a(href='#')       
+              i.fa.fa-twitter-square.fa-2x.fa-fw
+       
+// Bootstrap core JavaScript
+script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
+script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js", integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm", crossorigin="anonymous")

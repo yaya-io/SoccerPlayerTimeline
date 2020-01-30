@@ -1,0 +1,16 @@
+extends layout
+
+block content
+   
+  #visualization   
+  .msg
+  .loading.hide    
+    .messagediv      
+      .spinner-border.text-light.my-spinner-size(role="status")
+        span.sr-only Loading
+
+  datalist#datalist-teamName
+    each teamName in teamList
+      option(value=teamName)
+        
+  script(src="/javascripts/bundle.js")

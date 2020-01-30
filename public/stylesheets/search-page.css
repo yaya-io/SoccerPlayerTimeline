@@ -1,0 +1,292 @@
+body {
+  padding: 0;
+  font: 13px  Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;  
+}
+
+a {  
+  color: black;
+}
+
+/* navbar input group */
+.myinput-sm{
+  max-width: 20%;
+}
+
+/* vis timeline div */
+#visualization{
+margin-top: 3.0rem;
+}
+@media (max-width: 768px) {
+  #visualization{
+    margin-top: 87px;
+  }
+}
+@media (max-width: 550px) {
+  #visualization{
+    margin-top: 139px;
+  }
+}
+
+/* vis.js用 */
+.vis-item .vis-item-overflow {
+  overflow: visible;
+} 
+
+.vis-time-axis .grid.vis-odd{
+  background: gray;
+}
+
+.vis-panel.vis-top{
+  position: fixed;
+  top: 3.0rem !important;
+  background: rgb(255, 255, 255);
+  margin-left: 1px;
+  margin-top: 1px;
+  border-bottom-style: solid;
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .vis-panel.vis-top{
+  top: 87px !important;
+  }
+}
+@media (max-width: 550px) {
+  .vis-panel.vis-top{    
+  top: 139px !important;  
+  }
+}
+
+/* .vis-panel .vis-left .vis-vertical-scroll */
+/* 横軸ヘッダ */
+/* .vis-time-axis.vis-foreground
+{
+  background: gray;  
+}
+/* 縦軸ヘッダ */
+/* .vis-labelset
+{
+  background:rgba(26, 26, 26, 0.829)
+}  */
+
+/* データ部 交互 */
+.vis-foreground div.vis-group:nth-child(2n+1)
+{
+  background: -moz-linear-gradient(left, rgba(239, 240, 239, 0.15), #FFF);
+  background: -webkit-linear-gradient(left, rgba(239, 240, 239, 0.15), #FFF);
+  background: linear-gradient(to bottom, rgba(239, 240, 239, 0.15), #FFF);
+}
+/* 縦軸ヘッダ交互 */
+.vis-labelset div.vis-label:nth-child(2n+1)
+{
+  background: -moz-linear-gradient(left, rgba(239, 240, 239, 0.15), #FFF);
+  background: -webkit-linear-gradient(left, rgba(239, 240, 239, 0.15), #FFF);
+  background: linear-gradient(to bottom, rgba(239, 240, 239, 0.15), #FFF);
+}
+
+/* loaing用 */
+.hide {
+  display: none;
+}
+.loading {
+    
+  background: rgba(0,0,0,.5);
+  color: #999;opacity: 0.6;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; 
+}
+.messagediv{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+}
+.my-spinner-size{
+  width:4rem;
+  height:4rem;
+  border-width: 4px;  
+}
+
+/* チームアイコン用 */
+.circle-icon{
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: rgba(138, 138, 138, 0.63);
+  margin-right: 0.25rem;
+  vertical-align: middle;
+}
+
+
+/* チーム名の色設定 */
+.vis-item.default {
+  color: black;
+background-color: rgba(204, 202, 202, 0.5);
+border-color:lightgray;
+}
+.vis-item.kashima { 
+ color: black;
+background-color: rgba(163, 105, 118, 0.267);
+border-color:rgba(153, 10, 44, 0.63);
+}
+span.kashima{
+  background-color: rgb(160, 12, 47); 
+}
+
+.vis-item.begaruta {
+color: black;
+background-color: rgba(255, 217, 0, 0.212);
+border-color:orange;
+}
+span.begaruta{
+  background-color: rgb(255, 181, 21); 
+}
+
+.vis-item.shimizu {
+  color: black;
+background-color: rgba(255, 156, 35, 0.212);
+border-color:rgba(255, 140, 0, 0.692);
+}
+span.shimizu{
+  background-color: rgb(250, 150, 27);
+}
+
+.vis-item.marinosu {
+  color: black;
+border-color:rgba(44, 21, 255, 0.849);
+background-color: rgba(44, 21, 255, 0.24);
+}
+span.marinosu{
+  background-color:rgb(0, 85, 212) ;
+}
+
+.vis-item.syonan {
+  color: black;
+background-color: rgba(142, 255, 113, 0.253);
+border-color:rgba(47, 160, 19, 0.719);;
+}
+span.syonan{
+  background-color:lawngreen ;
+}
+
+.vis-item.jubiro {
+  color: black;
+background-color: rgba(65, 195, 255, 0.24);
+border-color:skyblue;
+}
+span.jubiro{
+  background:skyblue;
+}
+
+.vis-item.sagantosu {
+color: black;
+background-color: rgba(53, 209, 248, 0.336);
+border-color:aqua;
+}
+span.sagantosu{
+  background-color: rgb(39, 210, 253);
+}
+
+.vis-item.kobe {
+  color: black;
+  background-color: rgba(165, 40, 40, 0.212);
+  border-color:rgba(139, 48, 48, 0.8);
+}
+span.kobe{
+  background-color: rgb(99, 19, 19);
+}
+
+.vis-item.kawasaki {
+  color: black;
+  background-color: rgba(65, 213, 250, 0.24);
+  border-color:rgb(65, 213, 250);
+}
+span.kawasaki{
+  background-color: rgb(66, 212, 248);
+}
+
+.vis-item.sapporo {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border-color:rgba(131, 131, 131, 0.74);
+}
+span.sapporo{
+  background-color: rgba(34, 33, 33, 0.842);
+}
+
+.vis-item.fctokyo {
+  color: black;
+  background-color: rgba(27, 42, 247, 0.301);
+  border-color:rgba(27, 42, 247, 0.715);
+}
+span.fctokyo{
+  background-color: rgb(25, 37, 204);
+}
+
+.vis-item.hiroshima {
+  color: black;
+  background-color: rgba(127, 0, 211, 0.219);
+  border-color:rgba(127, 0, 211, 0.615);
+}
+span.hiroshima{
+  background-color: rgb(127, 0, 211);
+}
+
+.vis-item.ganba {
+  color: black;
+  background-color: rgba(39, 1, 253, 0.205);
+  border-color:rgba(9, 1, 53, 0.507);
+}
+span.ganba{
+  background-color: rgb(27, 0, 177);
+}
+
+.vis-item.urawa {
+  color: black;
+  background-color: rgba(255, 50, 50, 0.192);
+  border-color:rgba(248, 17, 17, 0.959);
+}
+span.urawa{
+  background-color: rgb(235, 3, 3);
+}
+
+.vis-item.nagoya {
+  color: black;
+  background-color: rgba(148, 27, 27, 0.137);
+  border-color:rgba(153, 14, 14, 0.74);
+}
+span.nagoya{
+  background-color: rgba(235, 3, 3, 0.425);
+}
+
+.vis-item.matsumoto{
+  color: black;
+  background-color: rgba(11, 122, 39, 0.342);
+  border-color:rgba(0, 138, 18, 0.74);
+}
+span.matsumoto{
+  background-color: rgb(4, 99, 8);
+}
+
+.vis-item.oita{
+  color: black;
+  background-color: rgba(41, 1, 221, 0.199);
+  border-color:rgba(0, 13, 201, 0.74);
+}
+span.oita{
+  background-color: rgb(36, 6, 206);
+}
+.vis-item.seresso{
+  color: black;
+  background-color: rgba(247, 132, 218, 0.479);
+  border-color:rgba(236, 58, 252, 0.795);
+}
+span.seresso{
+  background-color: rgb(247, 29, 163);
+}
