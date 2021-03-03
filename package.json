@@ -16,7 +16,7 @@
     "morgan": "~1.9.1",
     "newrelic": "^6.3.0",
     "npm-check-updates": "^4.0.1",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "serve-favicon": "^2.5.0",
     "sweetalert2": "^9.7.1",
     "vis": "^4.21.0-EOL"
